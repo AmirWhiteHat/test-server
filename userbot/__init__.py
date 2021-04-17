@@ -8,7 +8,7 @@ from userbot.Config import Config
 from var import Var
 
 StartTime = time.time()
-hellversion = "2.3.3"
+eagleversion = "2.3.3"
 botversion = "0.1"
 
 os.system("pip install --upgrade pip")
@@ -149,7 +149,7 @@ except:
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/HellBoy-OP/HellBot.git")
+    "https://github.com/KING-USER1/EAGLE_USERBOT.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
