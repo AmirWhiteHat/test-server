@@ -1,9 +1,9 @@
 import re
 
-from hellbot import bot
-from hellbot.utils import admin_cmd, sudo_cmd, edit_or_reply
-from hellbot.cmdhelp import CmdHelp
-from hellbot.helpers.functions import deEmojify
+from eaglebot import bot
+from eaglebot.utils import admin_cmd, sudo_cmd, edit_or_reply
+from eaglebot.cmdhelp import CmdHelp
+from eaglebot.helpers.functions import deEmojify
 
 
 @bot.on(admin_cmd(pattern="anime(?: |$)(.*)"))
@@ -14,7 +14,7 @@ async def nope(kraken):
         if kraken.is_reply:
             (await kraken.get_reply_message()).message
         else:
-            await edit_or_reply(kraken, "`Sir please give some query to search and download it for you..!`"
+            await edit_or_reply(cobra, "`Sir please give some query to search and download it for you..!`"
             )
             return
 
