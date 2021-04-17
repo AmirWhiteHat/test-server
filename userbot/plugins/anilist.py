@@ -10,7 +10,7 @@ import re
 import requests
 
 from userbot import *
-from hellbot.utils import *
+from eaglebot.utils import *
 from userbot.cmdhelp import CmdHelp
 
 
