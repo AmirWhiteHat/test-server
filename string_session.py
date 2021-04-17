@@ -13,21 +13,30 @@ kraken = """
 ╚═══╩═══╩═══╩═══╩╝─╚═╩═══╩╝─╚╩╝╚═╝─╚╝     ╚╝─╚╩═══╝    ╚╝──╚═══╩═══╩╝╚═╝
 """
 logo = """
-╭╮╱╭╮╱╱╭╮╭╮╭━━╮╱╱╱╭╮
-┃┃╱┃┃╱╱┃┃┃┃┃╭╮┃╱╱╭╯╰╮
-┃╰━╯┣━━┫┃┃┃┃╰╯╰┳━┻╮╭╯
-┃╭━╮┃┃━┫┃┃┃┃╭━╮┃╭╮┃┃
-┃┃╱┃┃┃━┫╰┫╰┫╰━╯┃╰╯┃╰╮
-╰╯╱╰┻━━┻━┻━┻━━━┻━━┻━╯
+######   ###    ########
+
+#                #      #  #               #
+
+######  #       # ########
+
+#               ##### #
+
+###### #         # #######
+
+                                                  #
+
+
+
+
 """
 baap_bolte = """
 #ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt          
-Made With Love By Team HellBot
+Made With Love By Team Eaglebot
 """
                                                                                                             
 print("")
 print(Style.BRIGHT + Fore.MAGENTA + kraken)
-print(Style.RESET_ALL)
+print(Style.RESE
 print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.CYAN + Back.BLUE + baap_bolte)
@@ -50,7 +59,7 @@ while True:
             )
 
             print(
-                "Thanks for Choosing HellBot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+                "Thanks for Choosing EagleBot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
             )
     except:
         print("")
