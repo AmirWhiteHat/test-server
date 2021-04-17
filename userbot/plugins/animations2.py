@@ -2,10 +2,10 @@ import asyncio
 from collections import deque
 
 from userbot import *
-from hellbot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from eaglebot.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Eagle User"
 
 
 @bot.on(admin_cmd(pattern=r"boxs$", outgoing=True))
@@ -43,7 +43,7 @@ async def _(event):
     animation_ttl = range(12)
     event = await edit_or_reply(event, "`Deploying...`")
     animation_chars = [
-        "**Heroku Connecting To Latest [Github Build](HellBoy-OP/HellBot)**",
+        "**Heroku Connecting To Latest [Github Build](KING-USER1/EAGLE_USERBOR)**",
         f"**Build started by user** {DEFAULTUSER}",
         f"**Deploy** `535a74f0` **by user** **{DEFAULTUSER}**",
         "**Restarting Heroku Server...**",
@@ -53,7 +53,7 @@ async def _(event):
         "**Starting process with command** `python3 -m stdborg`",
         "**State changed from starting to up**",
         "__INFO:Hêllẞø†:Logged in as 557667062__",
-        "__INFO:Hêllẞø†:Successfully loaded all plugins__",
+        "__INFO: EAGLEẞø†:Successfully loaded all plugins__",
         "**Build Succeeded**",
     ]
     for i in animation_ttl:
