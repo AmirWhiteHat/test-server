@@ -1,8 +1,8 @@
 import time
 
 from telethon import version
-from userbot import ALIVE_NAME, StartTime, hellversion
-from hellbot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot import ALIVE_NAME, StartTime, eagleversion
+from eaglebot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 async def reply_id(event):
@@ -14,7 +14,7 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "Hell User"
+DEFAULTUSER = ALIVE_NAME or "Eagle User"
 HELL_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ʟɛɢɛռɖaʀʏ_ᴀғ_ɦɛʟʟɮօt"
 
@@ -54,8 +54,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="hell$"))
-@bot.on(sudo_cmd(pattern="hell$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="eagle$"))
+@bot.on(sudo_cmd(pattern="eagle$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -66,7 +66,7 @@ async def amireallyalive(alive):
         hell_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
         hell_caption += f"     __**BOT STATUS**__\n\n"
         hell_caption += f"**★ Telethon version :** `{version.__version__}`\n"
-        hell_caption += f"**★ HêllBø† :**`{hellversion}`\n"
+        hell_caption += f"**★ EagleBø† :**`{hellversion}`\n"
         hell_caption += f"**★ Uptime :** `{uptime}\n`"
         hell_caption += f"**★ Master:** {mention}\n"
         await alive.client.send_file(
@@ -80,7 +80,7 @@ async def amireallyalive(alive):
             f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
             f"      __**BOT STATUS**__\n\n"
             f"**★ Telethon Version :** `{version.__version__}`\n"
-            f"**★ HêllBø†:** `{hellversion}`\n"
+            f"**★ EagleBø†:** `{hellversion}`\n"
             f"**★ Uptime :** `{uptime}\n`"
             f"**★ Master:** {mention}\n",
         )
