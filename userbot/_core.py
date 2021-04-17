@@ -11,19 +11,19 @@ from userbot import bot as hellbot
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
-hell_logo = "./KRAKEN/hellbot_logo.jpg"
+eagle_logo = ".https://telegra.ph/file/8a638fe98c217f020d01b.jpg"
 kraken = hellbot.uid
 hell = f"[{DEFAULTUSER}](tg://user?id={kraken})"
 
-@hellbot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
-@hellbot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
+@eaglebot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
+@eaglebot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))
 async def send(event):
     if event.fwd_from:
         return
     message_id = event.message.id
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {hell}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt](t.me/hellbot_official)** ⚡"
+    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {eagle}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt(https://t.me/EAGLE_USERBOT)** ⚡"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
@@ -39,8 +39,8 @@ async def send(event):
     else:
         await edit_or_reply(event, "File not found..... Kek")
 
-@hellbot.on(admin_cmd(pattern="install$", outgoing=True))
-@hellbot.on(sudo_cmd(pattern="install$", allow_sudo=True))
+@eaglebot.on(admin_cmd(pattern="install$", outgoing=True))
+@eaglebot.on(sudo_cmd(pattern="install$", allow_sudo=True))
 async def install(event):
     if event.fwd_from:
         return
@@ -71,7 +71,7 @@ async def install(event):
                             a = "__Installing...__"
                             b = 1
                         await event.edit(a)
-                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {hell}\n\n{string}\n\n        ⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt](t.me/hellbot_official)** ⚡", link_preview=False)
+                    return await event.edit(f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {eagle}\n\n{string}\n\n        ⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt](t.me/hellbot_official)** ⚡", link_preview=False)
                 return await event.edit(f"Installed module `{os.path.basename(downloaded_file_name)}`")
             else:
                 os.remove(downloaded_file_name)
@@ -80,8 +80,8 @@ async def install(event):
             await event.edit(f"**Failed to Install** \n`Error`\n{str(e)}")
             return os.remove(downloaded_file_name)
     
-@hellbot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
-@hellbot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
+@eaglebot.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
+@eaglebot.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
 async def uninstall(kraken):
     if kraken.fwd_from:
         return
@@ -94,8 +94,8 @@ async def uninstall(kraken):
     except OSError as e:
         await kraken.edit("Error: %s : %s" % (dir_path, e.strerror))
 
-@hellbot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
-@hellbot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
+@eaglebot.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
+@eaglebot.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
 async def unload(event):
     if event.fwd_from:
         return
@@ -111,8 +111,8 @@ async def unload(event):
         )
 
 
-@hellbot.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
-@hellbot.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
+@eaglebot.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
+@eaglebot.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
 async def load(event):
     if event.fwd_from:
         return
@@ -140,5 +140,5 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in HellBot."
+  "cmds", None, "Gives out the list of modules in Eaglebot."
 ).add()
