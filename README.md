@@ -1,11 +1,11 @@
 <h3 align="center">†hê Clønê øf</h3>
-<h2 align="center"> <a href="https://github.com/HellBoy-OP/HellBot">🔥 †hê Hêllẞø† 🔥</a></h2>
+<h2 align="center"> <a href="https://github.com/KING-USER1/EAGLE_BOT">🔥 †hê EAGLEẞø† 🔥</a></h2>
 
 
-<h1 align="center">⚡ †hê VΛDΣЯ ⚡</h1>
+<h1 align="center">⚡ †hê NATORIOUS ⚡</h1>
 
 
-[![Vader logo](https://telegra.ph/file/802564d139132b4cbb763.jpg)](https://t.me/Vader_RoBot)
+[![Vader logo](https://telegra.ph/file/8a638fe98c217f020d01b.jpg)](https://t.me/EAGLE_USERBOT)
 
 
 <h2 align="center">The owner would not be responsible for any kind of bans due to the bot.</h2>
@@ -33,7 +33,7 @@ support Group and get updates
 notifications in Update Channel.
 ```
 
-<a href="https://t.me/Vader_RoBot"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/EAGLE_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 
 </details>
 
