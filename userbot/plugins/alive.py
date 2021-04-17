@@ -1,5 +1,5 @@
 from userbot import *
-from hellbot.utils import *
+from eaglebot.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
@@ -8,7 +8,7 @@ from telethon.tl.types import Channel, Chat, User
 
 #-------------------------------------------------------------------------------
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Eagle User"
 
 ludosudo = Config.SUDO_USERS
 
@@ -19,7 +19,7 @@ else:
 
 kraken = bot.uid
 
-PM_IMG = "https://telegra.ph/file/80e5200c615cf0cb57aa9.mp4"
+PM_IMG = "https://telegra.ph/file/8a638fe98c217f020d01b.jpg"
 pm_caption = "__**🔥🔥ɦɛʟʟɮօt ɨs օռʟɨռɛ🔥🔥**__\n\n"
 
 pm_caption += (
@@ -28,15 +28,15 @@ pm_caption += (
 
 pm_caption += f"🛡️TELETHON🛡️ : `{version.__version__}` \n"
 
-pm_caption += f"😈Hêllẞø†😈       : __**{hellversion}**__\n"
+pm_caption += f"😈EAGLEẞø†😈       : __**{eagleversion}**__\n"
 
 pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
 
-pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/HellBot_Official)\n"
+pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/EAGLE_USERBOT)\n"
 
-pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/SupRemE_AnanD)\n\n"
+pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/devil_boy_6)\n\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/hellboy-op/hellbot) 🔹 [📜License📜](https://github.com/HellBoy-OP/HellBot/blob/master/LICENSE)"
+pm_caption += "    [✨REPO✨](https://github.com/KING-USER1/EAGLE_USERBOT) 🔹 [📜License📜](https://github.com/KING-USER1/EAGLE_USERBOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
