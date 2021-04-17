@@ -10,7 +10,7 @@ from userbot import *
 from userbot import bot as hellbot
 
 DELETE_TIMEOUT = 5
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Eagle User"
 eagle_logo = ".https://telegra.ph/file/8a638fe98c217f020d01b.jpg"
 kraken = hellbot.uid
 hell = f"[{DEFAULTUSER}](tg://user?id={kraken})"
