@@ -31,7 +31,7 @@ from telethon.tl.types import (
 
 from userbot import *
 from userbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
-from hellbot.utils import *
+from eaglebot.utils import *
 from userbot.cmdhelp import CmdHelp
 
 # =================== CONSTANT ===================
@@ -139,7 +139,7 @@ async def promote(promt):
         delete_messages=True,
         pin_messages=True,
     )
-    hellevent = await edit_or_reply(promt, "`Promoting...`")
+    eaglevent = await edit_or_reply(promt, "`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "ǟɖʍɨռ"
@@ -147,7 +147,7 @@ async def promote(promt):
         return
     try:
         await promt.client(EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await hellevent.edit("`Promoted Successfully! Abb nacho bencho💃🕺`")
+        await hellevent.edit("`Promoted This lodunlalit nacho💃🕺`")
     except BadRequestError:
         await hellevent.edit(NO_PERM)
         return
